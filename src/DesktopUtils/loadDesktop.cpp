@@ -18,6 +18,7 @@ DesktopFile loadDesktop(const QString& filePath) {
 
     // ----- Langugage specific fields ----- //
     QMap<QString, QString> entryMap = group.entryMap();
+
     for (auto it = entryMap.begin(); it != entryMap.end(); ++it) {
         if (it.key().startsWith("Name")) {
             desktopFile.desktopEntry.name[it.key().mid(4)] = it.value();
@@ -30,7 +31,7 @@ DesktopFile loadDesktop(const QString& filePath) {
 
     // ------ Core ------ //
     desktopFile.desktopEntry.type = group.readEntry("Type", "");
-    desktopFile.desktopEntry.exec = group.readEntry("Exec", "");
+    desktopFile.desktopEntry.exec = "/usr/bin/tilix"; // group.readEntry("Exec", "");
     desktopFile.desktopEntry.startupWMClass = group.readEntry("StartupWMClass", "");
     desktopFile.desktopEntry.singleMainWindow = group.readEntry("SingleMainWindow", "");
 

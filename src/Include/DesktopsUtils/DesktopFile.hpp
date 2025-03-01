@@ -45,6 +45,10 @@ class DesktopFile {
     QMap<QString, DesktopAction> actions;
 
     int run();
+    bool getIcon(QIcon& icon);
+
+    static QString getLocalizedValue(const QMap<QString, QString>& map);
+    static QList<DesktopFile> loadAll(const QString& dir = "/usr/share/applications");
 };
 
 DesktopFile loadDesktop(const QString& filePath);

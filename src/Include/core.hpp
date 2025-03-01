@@ -4,6 +4,7 @@
 #include <QApplication>
 #include <QDir>
 #include <QFile>
+#include <QHBoxLayout>
 #include <QList>
 #include <QMap>
 #include <QProcess>

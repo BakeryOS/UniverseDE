@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qss</file>
+        <file>widgets/dock.qss</file>
+        <file>widgets/z.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,14 @@
+DockWidget {
+    background: rgba(30, 30, 30, 180);
+    border-radius: 15px;
+}
+
+QPushButton {
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 50);
+    transform: scale(1.1);
+}
